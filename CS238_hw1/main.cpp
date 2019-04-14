@@ -47,6 +47,8 @@ vector<int> deleteVal(int a, vector<int> v){
     for(int i=0; i<v.size(); i++){
         if(v[i]!=a){
             new_v.push_back(v[i]);
+        }else{
+            a=-1;
         }
     }
     return new_v;
@@ -58,6 +60,8 @@ vector<int> deleteVectfromVect(vector<int> a, vector<int> b){
         //if b[i] is not in a, then add to new vect
         if(a.end() == find(a.begin(), a.end(), b[i])){
             new_v.push_back(b[i]);
+        }else{
+            a= deleteVal(b[i],a);
         }
     }
 
@@ -77,18 +81,39 @@ void printVect(vector<int> a, string message){
 }
 
 void place(vector<int> l, vector<int> x){
+    printVect(l,"L");
+    if(l.empty()){
+        printVect(x, "Resulting X");
+        return;
+    }
+
+    int y = l[getMaxIndex(l)];
+    vector<int> delta_y_x= delta(y,x);
+
+    if(containedWithin(delta_y_x,l)){
+        x.push_back(y);
+        l=deleteVectfromVect(delta_y_x, l);
+
+
+        return;
+    }
 
 }
 
 void partialDigest(){
-    vector<int> L = {0,1};
+    vector<int> L = {2,2,3,3,4,5,6,7,8,10};
+
+    int width= L[getMaxIndex(L)];
+    L= deleteVal(width,L);
+    vector<int> X = {0, width};
+    place(L,X);
 
     return;
 }
 
 int main(){
 
-    cout << "hello world";
+    partialDigest();
 
     return 0;
 }
