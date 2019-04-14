@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug"/>
+				<Option working_dir="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug"/>
+				<Option working_dir="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS238_hw1">
-				<Option output="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CS238_hw1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug"/>
+				<Option output="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CS238_hw1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS238_hw1"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS238_hw1"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="CS238_hw1/fast">
-				<Option output="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CS238_hw1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug"/>
+				<Option output="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CS238_hw1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,27 +67,27 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS238_hw1/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 CS238_hw1/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug"/>
+				<Option working_dir="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/vagrant/CLionProjects/CS238_hw1/main.cpp">
+		<Unit filename="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/main.cpp">
 			<Option target="CS238_hw1"/>
 		</Unit>
-		<Unit filename="/home/vagrant/CLionProjects/CS238_hw1/CMakeLists.txt">
+		<Unit filename="/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

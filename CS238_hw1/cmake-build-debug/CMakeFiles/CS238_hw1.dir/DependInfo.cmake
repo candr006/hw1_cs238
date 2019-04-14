@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vagrant/CLionProjects/CS238_hw1/main.cpp" "/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CMakeFiles/CS238_hw1.dir/main.cpp.o"
+  "/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/main.cpp" "/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CMakeFiles/CS238_hw1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

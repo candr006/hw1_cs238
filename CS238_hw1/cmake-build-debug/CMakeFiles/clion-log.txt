@@ -1,4 +1,4 @@
-/home/vagrant/clion-2018.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vagrant/CLionProjects/CS238_hw1
+/home/vagrant/clion-2018.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vagrant/CLionProjects/hw1_cs238/CS238_hw1
 -- The C compiler identification is GNU 4.8.4
 -- The CXX compiler identification is GNU 4.8.4
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug
+-- Build files have been written to: /home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug

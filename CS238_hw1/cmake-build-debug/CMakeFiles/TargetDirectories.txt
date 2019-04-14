@@ -1,3 +1,3 @@
-/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CMakeFiles/CS238_hw1.dir
-/home/vagrant/CLionProjects/CS238_hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CMakeFiles/CS238_hw1.dir
+/home/vagrant/CLionProjects/hw1_cs238/CS238_hw1/cmake-build-debug/CMakeFiles/edit_cache.dir
