@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/CS238_hw1.dir/main.cpp.o  -o CS238_hw1 
