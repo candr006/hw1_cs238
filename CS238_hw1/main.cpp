@@ -80,7 +80,7 @@ void printVect(vector<int> a, string message){
     cout << "}" << endl;
 }
 
-void place(vector<int> l, vector<int> x){
+void place(vector<int> l, vector<int> x, int width){
     printVect(l,"L");
     if(l.empty()){
         printVect(x, "Resulting X");
@@ -93,7 +93,22 @@ void place(vector<int> l, vector<int> x){
     if(containedWithin(delta_y_x,l)){
         x.push_back(y);
         l=deleteVectfromVect(delta_y_x, l);
+        place(l,x,width);
 
+        x=deleteVal(y,x);
+        l.insert(l.end(), delta_y_x.begin(), delta_y_x.end());
+
+        int w=width-y;
+        vector<int> delta_w_x= delta(w,x);
+        if(containedWithin(delta_w_x,l)){
+            x.push_back(w);
+            l= deleteVectfromVect(delta_w_x,l);
+
+            place(l,x,width);
+            x=deleteVal(w,x);
+            l.insert(l.end(), delta_w_x.begin(), delta_w_x.end());
+
+        }
 
         return;
     }
@@ -106,7 +121,7 @@ void partialDigest(){
     int width= L[getMaxIndex(L)];
     L= deleteVal(width,L);
     vector<int> X = {0, width};
-    place(L,X);
+    place(L,X,width);
 
     return;
 }
