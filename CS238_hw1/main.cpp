@@ -133,10 +133,46 @@ void place(vector<int> l, vector<int> x, int width){
 
 }
 
+vector<int> addIntToVect(int num, int duplicity, vector<int> v){
+    while(duplicity>0){
+        v.push_back(num);
+        duplicity--;
+    }
+    return v;
+}
+
 void partialDigest(){
-    vector<int> L = {2,2,3,3,4,5,6,7,8,10};
+    vector<int> L0 = {2,2,3,3,4,5,6,7,8,10};
     //1(9), 2(8), 3(7), 4(6), 5(5), 6(4), 7(3), 8(2), 9(1)
-    //vector<int> L = {1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,6,7,7,7,8,8,9};
+    vector<int> L1 = {1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,6,7,7,7,8,8,9};
+
+    //1(1), 2(1), 3(2), 4(1), 5(2), 6(1), 7(1), 9(2), 10(1), 12(1), 14(1), 15(1)
+    vector<int> L2 = {1,2,3,3,4,5,5,6,7,9,9,10,12,14,15};
+
+    //1(16), 2(15), 3(14), 4(13), 5(12), 6(11), 7(10), 8(9), 9(8),
+    //          10(9), 11(8), 12(7), 13(6), 14(5), 15(4), 16(3), 17(2), 18(1)
+    vector<int> L3;
+    L3 = addIntToVect(1,16,L3);
+    L3 = addIntToVect(2,15,L3);
+    L3 = addIntToVect(3,14,L3);
+    L3 = addIntToVect(4,13,L3);
+    L3 = addIntToVect(5,12,L3);
+    L3 = addIntToVect(6,11,L3);
+    L3 = addIntToVect(7,10,L3);
+    L3 = addIntToVect(8,9,L3);
+    L3 = addIntToVect(9,8,L3);
+    L3 = addIntToVect(10,9,L3);
+    L3 = addIntToVect(11,8,L3);
+    L3 = addIntToVect(12,7,L3);
+    L3 = addIntToVect(13,6,L3);
+    L3 = addIntToVect(14,5,L3);
+    L3 = addIntToVect(15,4,L3);
+    L3 = addIntToVect(16,3,L3);
+    L3 = addIntToVect(17,2,L3);
+    L3 = addIntToVect(18,1,L3);
+
+
+    vector<int>L=L3;
 
     int width= L[getMaxIndex(L)];
     L= deleteVal(width,L);
