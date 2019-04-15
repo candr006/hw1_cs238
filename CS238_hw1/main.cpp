@@ -81,39 +81,55 @@ void printVect(vector<int> a, string message){
 }
 
 void place(vector<int> l, vector<int> x, int width){
-    printVect(l, "L");
-    printVect(x, "X");
+
+
     if(l.empty()){
-        printVect(x, "Resulting X");
+        printVect(x, "X");
         return;
     }
 
     int y = l[getMaxIndex(l)];
     vector<int> delta_y_x= delta(y,x);
 
-    if(containedWithin(delta_y_x,l)){
+    if(containedWithin(delta_y_x,l)) {
         x.push_back(y);
-        l=deleteVectfromVect(delta_y_x, l);
+        sort(x.begin(), x.end());
+
+        l = deleteVectfromVect(delta_y_x, l);
+        sort(l.begin(), l.end());
+
+        place(l, x, width);
+
+        x = deleteVal(y, x);
+        sort(x.begin(), x.end());
+
+        l.insert(l.end(), delta_y_x.begin(), delta_y_x.end());
+        sort(l.begin(), l.end());
+    }
+
+    int w = width - y;
+    vector<int> delta_w_x = delta(w, x);
+
+    if(containedWithin(delta_w_x,l)){
+        x.push_back(w);
+        sort(x.begin(),x.end());
+
+        l= deleteVectfromVect(delta_w_x,l);
+        sort(l.begin(),l.end());
+
         place(l,x,width);
 
-        x=deleteVal(y,x);
-        l.insert(l.end(), delta_y_x.begin(), delta_y_x.end());
+        x=deleteVal(w,x);
+        sort(x.begin(),x.end());
 
-        int w=width-y;
-        vector<int> delta_w_x= delta(w,x);
-        if(containedWithin(delta_w_x,l)){
-            x.push_back(w);
-            l= deleteVectfromVect(delta_w_x,l);
+        delta_w_x= delta(w,x);
+        l.insert(l.end(), delta_w_x.begin(), delta_w_x.end());
+        sort(l.begin(),l.end());
 
-            place(l,x,width);
-            x=deleteVal(w,x);
-            delta_w_x= delta(w,x);
-            l.insert(l.end(), delta_w_x.begin(), delta_w_x.end());
-
-        }
+    }
 
         return;
-    }
+
 
 }
 
