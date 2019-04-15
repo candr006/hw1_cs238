@@ -81,7 +81,8 @@ void printVect(vector<int> a, string message){
 }
 
 void place(vector<int> l, vector<int> x, int width){
-    printVect(l,"L");
+    printVect(l, "L");
+    printVect(x, "X");
     if(l.empty()){
         printVect(x, "Resulting X");
         return;
@@ -106,6 +107,7 @@ void place(vector<int> l, vector<int> x, int width){
 
             place(l,x,width);
             x=deleteVal(w,x);
+            delta_w_x= delta(w,x);
             l.insert(l.end(), delta_w_x.begin(), delta_w_x.end());
 
         }
@@ -117,6 +119,8 @@ void place(vector<int> l, vector<int> x, int width){
 
 void partialDigest(){
     vector<int> L = {2,2,3,3,4,5,6,7,8,10};
+    //1(9), 2(8), 3(7), 4(6), 5(5), 6(4), 7(3), 8(2), 9(1)
+    //vector<int> L = {1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,5,5,5,5,5,6,6,6,6,7,7,7,8,8,9};
 
     int width= L[getMaxIndex(L)];
     L= deleteVal(width,L);
